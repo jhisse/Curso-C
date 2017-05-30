@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main() {
 
@@ -7,4 +6,6 @@ int main() {
     printf("*******************************************\n");
     printf("* Bem vindo ao nosso jogo da adivinhação! *\n");
     printf("*******************************************\n");
+
+    int numero_secreto = 42;
 }
