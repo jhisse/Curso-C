@@ -23,22 +23,17 @@ int main() {
 
         int acertou = (chute == numero_secreto);
 
+        int maior = (chute > numero_secreto);
+
         if (acertou) {
             printf("Parabéns! Você acertou!\n");
 
             break; // para o laço for
-
+        } else if (maior) {
+            printf("Você errou! O número que você chutou é maior que o número secreto.\n");
         } else {
-
-            int maior = (chute > numero_secreto);
-
-            if (maior) {
-                printf("Você errou! O número que você chutou é maior que o número secreto.\n");
-            } else {
-                printf("Você errou! O número que você chutou é menor que o número secreto.\n");
-            }; // end if
-
-        }; // end if
+            printf("Você errou! O número que você chutou é menor que o número secreto.\n");
+        };
 
     }; // end for
 
