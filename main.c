@@ -2,5 +2,9 @@
 #include <stdlib.h>
 
 int main() {
-    printf("Bem vindo ao nosso jogo da adivinhaÁ„o!\n");
+
+    // imprime o cabe√ßalho do jogo
+    printf("*******************************************\n");
+    printf("* Bem vindo ao nosso jogo da adivinha√ß√£o! *\n");
+    printf("*******************************************\n");
 }
