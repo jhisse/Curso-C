@@ -18,8 +18,18 @@ int main() {
     for (tentativa = 1; tentativa <= MAXIMO_DE_TENTATIVAS; tentativa++) {
         printf("Tentativa %d de %d\n", tentativa, MAXIMO_DE_TENTATIVAS);
         printf("Qual o seu chute? ");
+
         scanf("%d", &chute);
+
         printf("Seu chute foi %d.\n", chute);
+
+        if (chute < 0) {
+            printf("Você não pode chutar números negativos.\n");
+
+            tentativa--; // volta para a tentativa
+
+            continue; // pula para a próxima iteração do for
+        };
 
         int acertou = (chute == numero_secreto);
 
