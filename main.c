@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#define MAXIMO_DE_TENTATIVAS 5
+
 int main() {
 
     // imprime o cabeçalho do jogo
@@ -13,8 +15,8 @@ int main() {
 
     int tentativa;
 
-    for (tentativa = 1; tentativa <= 3; tentativa++) {
-        printf("Tentativa %d de 3\n", tentativa);
+    for (tentativa = 1; tentativa <= MAXIMO_DE_TENTATIVAS; tentativa++) {
+        printf("Tentativa %d de %d\n", tentativa, MAXIMO_DE_TENTATIVAS);
         printf("Qual o seu chute? ");
         scanf("%d", &chute);
         printf("Seu chute foi %d.\n", chute);
