@@ -8,4 +8,12 @@ int main() {
     printf("*******************************************\n");
 
     int numero_secreto = 42;
+
+    int chute;
+
+    printf("Qual o seu chute? ");
+    scanf("%d", &chute);
+    printf("Seu chute foi %d.", chute);
+
+
 }
