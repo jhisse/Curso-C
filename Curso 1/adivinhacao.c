@@ -58,7 +58,7 @@ int main() {
             continue; // pula para a próxima iteração do while
         };
 
-        int acertou = (chute == numero_secreto);
+        acertou = (chute == numero_secreto);
 
         int maior = (chute > numero_secreto);
 
