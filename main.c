@@ -23,6 +23,9 @@ int main() {
 
         if (acertou) {
             printf("Parabéns! Você acertou!\n");
+
+            break; // para o laço for
+
         } else {
 
             int maior = (chute > numero_secreto);
