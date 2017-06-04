@@ -13,5 +13,5 @@ int main() {
 
     } while(distancia > 0.001);
 
-    printf("Tempo total: %d minutos", tempo_total);
+    printf("Tempo total: %d minutos\n", tempo_total);
 }
